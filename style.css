@@ -1,9 +1,10 @@
 .container ul {
     width: 200px;
     list-style-type: none; 
+    
 }
 .container li {
-    border-radius: 3px; 
+    border-radius: 5px; 
     box-shadow: 2px 2px 5px #888888;
     margin: 10px 0;
     padding: 10px;
@@ -17,6 +18,7 @@
     background: -ms-linear-gradient(top, rgba(12, 133, 12, 1) 0%, rgba(114, 191, 95, 1) 100%);
     background: linear-gradient(to bottom, rgba(12, 133, 12, 1) 0%, rgba(114, 191, 95, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c850c', endColorstr='#72bf5f', GradientType=0);
+    
 }
 .container li a {
     display: block; 
@@ -31,12 +33,19 @@
     float:left;
     display: flex; /* Use flexbox */
     flex-wrap: wrap; 
+  
 }
 
+.material-symbols-outlined {
+    margin-top: 10pt;
+    color: white;
+    size: 1.5pt;
+}
 
 main {
 overflow: hidden;
 padding-left: 20px;
+width:75%
 
 }
 .search-bar {
@@ -49,26 +58,51 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     letter-spacing: 0.2em;
-    color: #60ee03;
+    color: #eaeee8;
 }
 
 #home {
     background-image: url('assets/images/meadow.jpeg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(166, 237, 175, 0.6); 
     margin: 0; 
     padding: 0; 
     height: 100vh; 
 }
+
+  
 p {
     
     font-family: monospace;
-    font-size: 2em;
+    font-size: 1.75rem;
     text-align: justify;
-    color: #b4f02b;
+    color: #f4f0f2;
     margin:10px 20px;
     padding: 10px;
+    letter-spacing:1.5px;
 
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: green;
+    color: white;
+    text-align:center;
+}
+.flex {
+
+display: flex; /* Use flexbox */
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 400px) {
+    .left, .main, .right {
+      width: 100%;
+    }
 }
