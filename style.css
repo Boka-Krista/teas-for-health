@@ -45,7 +45,7 @@
 main {
 overflow: hidden;
 padding-left: 20px;
-width:75%
+width:80%
 
 }
 .search-bar {
@@ -67,22 +67,37 @@ h1 {
     background-repeat: repeat-y;
     background-position: center;
     background-color: rgba(166, 237, 175, 0.6); 
-    margin: 0; 
-    padding: 0; 
     height: 100vh; 
-}
-
-  
-p {
-    
     font-family: monospace;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     text-align: justify;
-    color: #f4f0f2;
+    color: lavenderblush;
     margin:10px 20px;
     padding: 10px;
     letter-spacing:1.5px;
+}
 
+  
+.better-sleep {
+    text-align:justify ;
+    display: flex;
+    background-color: lightblue;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.cold {
+    text-align:justify ;
+    display: flex;
+    background-color: lightcoral;
+    float:left
+}  
+
+img {
+    float:left;
+    margin-left: 10px;
 }
 
 #footer {
