@@ -76,16 +76,21 @@ h1 {
     padding: 10px;
     letter-spacing:1.5px;
 }
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.2em;
 
+
+}
   
 .better-sleep {
     text-align:justify ;
     display: flex;
     background-color: lightblue;
-    margin: 10px 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 20 30 30 20;
     float: left;
+    
 }
 
 .cold {
@@ -93,11 +98,13 @@ h1 {
     display: flex;
     background-color: lightcoral;
     float:left
-}  
-
+    
+}
 img {
     float:left;
-    margin-left: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    
 }
 
 #footer {
