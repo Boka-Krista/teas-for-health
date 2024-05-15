@@ -15,21 +15,24 @@
     <header>
         <nav>
             <div class="row main-nav">
-                <div class="search-bar">
-                    
-                   
-                    <span class="material-symbols-outlined">
-                        search
-                        </span>
-                    <input type="text" id="searchField" name="searchField" placeholder="Search For a Product, Brand, or Category">
-                   
-                </div>
+              <div class="box">
+                <input type="search" id="search" placeholder="Search" />
+           </div>
             </div>
         </nav>
-    </header>
+        <div id="google_translate_element"></div>
+    
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
     <div class="container">
         <div class="sidebar"></div>
-
+    
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="better-sleep.html">Better sleep</a></li>
@@ -65,20 +68,7 @@
               </div>
         </div>
        
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'},
-                'google_translate_element'
-            );
-        }
-    </script>
- 
-    <script type="text/javascript"
-            src=
-"https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-    </script>
+        
     </main>
     <footer id="footer">Copyright 2024</footer>
 </body>
