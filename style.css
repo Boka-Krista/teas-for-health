@@ -45,7 +45,7 @@
 .box {
     margin-right:auto;
     margin-left:auto;
-    width:100px; /* Set this property to whatever you like */
+    width:100%; /* Set this property to whatever you like */
     float:calc(center);
 }
 
@@ -56,6 +56,7 @@
     margin: auto;
     background-color: #b6b3b3;
     margin-bottom: 50pt;
+    float: middle;
 }
 
 #google_translate_element {
@@ -73,92 +74,85 @@
     margin-top: 30px;
 }
 
-#myImg { 
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  #myImg:hover {opacity: 0.7;}
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
   .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    margin-left: 550px;
+    width: 100%;
   }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    margin-left: 50px;
-    height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
-  }
+}
 
 main {
 overflow: hidden;
@@ -204,47 +198,39 @@ h1 {
 h3 {
     text-align: center;
     margin-bottom: 20px;
-    letter-spacing: 0.2em;
-
-
+    text-transform: uppercase;
 }
-  
-
-
-.column {
-    flex:50%; /* Adjust column width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+ 
+  .column {
+    float: left;
+    width: 50%;
+    padding:20;
+    box-sizing: border-box;
     text-align: justify;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 100%;
-    float:left;
-    padding-left: 5pt;
-    padding-right: 10pt;
-    padding-bottom: 20pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    height: 600px;
     
-   
-}
+  }
   
   /* Clear floats after the columns */
-  .row {
+  .row :after{
+    display:table-row;
+    content: "";
+    clear: both;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; /* Align items to the left */
-    margin: 0;
+    margin: 30 0 30 0;
     grid-row: auto;
     float:left;
     text-align: justify;
-    padding-left: 5pt;
-    padding-right: 10pt;
-    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+   box-sizing: border-box;
+  
   }
-.cold {
-    text-align:justify ;
-    display: flex;
-    background-color: lightcoral;
-    float:left
-    
-}
 img {
     float:left;
     margin-right:10px;
@@ -261,6 +247,7 @@ img {
     background: green;
     color: white;
     text-align:center;
+    
 }
 .flex {
 
