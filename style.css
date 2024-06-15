@@ -126,7 +126,8 @@
 }
 main {
   overflow: hidden;
-  padding-left: 20px;
+  padding-left: 45px;
+  padding-right: 30px;
   align-items: center;
   flex: 1;
 }
@@ -149,6 +150,7 @@ h1 {
   margin-bottom: 20px;
   letter-spacing: 0.2em;
   color: #eaeee8;
+  margin-right: 500px;
 }
 #home {
   background-image: url('assets/images/meadow.jpeg');
@@ -176,22 +178,22 @@ h3 {
   padding: 20px;
   box-sizing: border-box;
   text-align: justify;
-  height:900px;
+  height:800px;
   right:-400px;
+  padding-left: 30px;
+  padding-right:30px;
+  
 }
 .row::after {
   content: "";
   display: table;
   clear: both;
   float: left;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: 900px;
   justify-content: right;
 }
 img {
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 #footer {
   position: fixed;
@@ -210,5 +212,27 @@ img {
 @media screen and (max-width: 700px) {
   .column {
       width: 100%;
+  }
+}
+
+@media screen  and (max-width: 1024px) {
+ 
+  .sidebar {
+    width:30%;
+    float:right;
+  }
+  main  {
+    width:780px;
+height:100%;
+margin:60px;
+float:left;
+padding-left:40px;
+padding-right:40px;
+padding-top:40px;
+padding-bottom:60px;
+  }
+  #home {
+    width: 70%;
+    padding-bottom: -250px;
   }
 }
