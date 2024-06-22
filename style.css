@@ -71,12 +71,30 @@
     opacity: 0.7;
   }
 
-  #aloe {
+  #birch {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
-  #aloe:hover {
+  #birch:hover {
+    opacity: 0.7;
+  }
+
+   #blackcurrant {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #blackcurrant:hover {
+    opacity: 0.7;
+  }
+
+  #camomile {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #camomile:hover {
     opacity: 0.7;
   }
 
@@ -84,7 +102,6 @@
     display: none; 
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
     left: 0;
     top: 0;
     width: 100%; 
@@ -92,16 +109,18 @@
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.9); 
-    padding-right: 450px;
+    margin-right: -600px; 
   }
   .modal-content {
-    margin: auto;
+    margin-left: 600px;
+    margin-top: 100px;
     display: block;
     width: 80%;
     max-width: 700px;
+    height:380px;
   }
   #caption {
-    margin: auto;
+    margin: 550px;
     display: block;
     width: 80%;
     max-width: 700px;
@@ -117,17 +136,48 @@
   }
 
   #caption1 {
-    margin: auto;
+    margin: 550px;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 70px;
     
   }
   .modal-content, #caption1 {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  #caption2 {
+    margin: 550px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 70px;
+    
+  }
+  .modal-content, #caption2 {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  #caption3 {
+    margin: 550px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 70px;
+    
+  }
+  .modal-content, #caption3 {
     animation-name: zoom;
     animation-duration: 0.6s;
   }
