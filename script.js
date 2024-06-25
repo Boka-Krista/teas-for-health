@@ -18,6 +18,12 @@ images.forEach(function(image, index) {
     /*
      * SOMETHING LIKE THIS
      */
-    captionTexts[index].style = "color:white;font-size:30rem";
+    captionTexts[index].style = "color:yellow; font-size:xx-large; letter-spacing:2.3em;";
   };
 });
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
