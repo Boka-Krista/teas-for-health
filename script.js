@@ -18,7 +18,7 @@ images.forEach(function(image, index) {
     /*
      * SOMETHING LIKE THIS
      */
-    captionTexts[index].style = "color:yellow; font-size:xx-large; letter-spacing:2.3em;";
+    captionTexts[index].style = "color:yellow; font-size:xx-large; letter-spacing:0.3em;";
   };
 });
 var span = document.getElementsByClassName("close")[0];
